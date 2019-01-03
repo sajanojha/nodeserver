@@ -1,0 +1,102 @@
+{
+  "development": {
+    "config_id": "development",
+    "app_name": "my app",
+    "app_desc": "my app desc",
+    "node_port": 3000,
+    "json_indentation": 4,
+    "database": "my-app-db-dev"
+  },
+  "testing": {
+    "config_id": "testing",
+    "database": "my-app-db-test"
+  },
+  "staging": {
+    "config_id": "staging",
+    "node_port": 8080,
+    "database": "my-app-db-stag"
+  },
+  "production": {
+    "config_id": "production",
+    "node_port": 8080,
+    "database": "my-app-db-prod"
+  },
+  "url" : "http://data.americanartcollaborative.org/sparql",
+  "headers" : {
+    "cache-control" : "no-cache",
+    "accept" : "application/sparql-results+json",
+    "content-type" : "application/x-www-form-urlencoded"
+  },
+  "museums" : {
+    "Gilcrease Museum" : {
+      "code" : "GM",
+      "localURL" : "http://data.gilcrease.org",
+      "globalURL" : "http://data.americanartcollaborative.org/GM"
+    },
+    "Archives of American Art" : {
+      "code" : "aaa",
+      "localURL" : "http://data.aaa.si.edu/",
+      "globalURL" : "http://data.americanartcollaborative.org/aaa"
+    },
+    "The Amon Carter" : {
+      "code" : "acm",
+      "localURL" : "http://data.cartermuseum.org",
+      "globalURL" : "http://data.americanartcollaborative.org/acm"
+    },
+    "Autry Museum of the American West" : {
+      "code" : "autry",
+      "localURL" : "http://data.theautry.org",
+      "globalURL" : "http://data.americanartcollaborative.org/autry"
+    },
+    "Crystal Bridges Museum of American Art" : {
+      "code" : "cbm",
+      "localURL" : "http://data.crystalbridges.org",
+      "globalURL" : "http://data.americanartcollaborative.org/cbm"
+    },
+    "Colby College Museum of Art" : {
+      "code" : "ccma",
+      "localURL" : "http://data.museum.colby.edu/aac",
+      "globalURL" : "http://data.americanartcollaborative.org/ccma"
+    },
+    "Dallas Museum of Art" : {
+      "code" : "GM",
+      "localURL" : "http://data.americanartcollaborative.org/dma",
+      "globalURL" : "http://data.americanartcollaborative.org/dma"
+    },
+    "Indianapolis Museum of Art at Newfields" : {
+      "code" : "ima",
+      "localURL" : "http://data.imamuseum.org/",
+      "globalURL" : "http://data.americanartcollaborative.org/ima"
+    },
+    "National Museum of Wildlife Art" : {
+      "code" : "nmwa",
+      "localURL" : "http://data.wildlifeart.org",
+      "globalURL" : "http://data.americanartcollaborative.org/nmwa"
+    },
+    "National Portrait Gallery" : {
+      "code" : "npg",
+      "localURL" : "http://data.npg.si.edu",
+      "globalURL" : "http://data.americanartcollaborative.org/npg"
+    },
+    "Princeton University Art Museum" : {
+      "code" : "puam",
+      "localURL" : "http://data.americanartcollaborative.org/puam",
+      "globalURL" : "http://data.americanartcollaborative.org/puam"
+    },
+    "Smithsonian American Art Museum" : {
+      "code" : "saam",
+      "localURL" : "http://data.americanart.si.edu",
+      "globalURL" : "http://data.americanartcollaborative.org/saam"
+    },
+    "The Walters Art Museum" : {
+      "code" : "wam",
+      "localURL" : "http://data.thewalters.org",
+      "globalURL" : "http://data.americanartcollaborative.org/wam"
+    },
+    "Yale Center for British Art" : {
+      "code" : "YCBA",
+      "localURL" : "http://collection.britishart.yale.edu/id/person-institution/ycba",
+      "globalURL" : "http://data.americanartcollaborative.org/ycba"
+    }
+  }
+}
