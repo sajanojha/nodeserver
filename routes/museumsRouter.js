@@ -29,6 +29,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/*get all the manmade objects per museums */
 router.get('/manmadeobjects/institution/:institution', function(req, res, next) {
   let institutionURL = req.params.institution;
   const offSet = req.query.offset;
