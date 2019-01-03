@@ -62,4 +62,4 @@ typings/
 
 #DS ignore and idea folder
 .DS_Store
-.idea/
+.idea/**
