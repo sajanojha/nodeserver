@@ -1,9 +1,8 @@
 const request = require('request');
-
-// make request to the SPARQL server and get the data back
+// make request to the SPARQL Endpoint and get the data back
 module.exports = {
-  getData: function (options, callback) {
-    request(options, function(err, res, body) {
+  getData : (options, callback) => {
+        request(options, function(err, res, body) {
       if (err)
         return callback(err);
       try {
@@ -14,5 +13,4 @@ module.exports = {
       }
     });
   }
-};
-
+} // module.export
