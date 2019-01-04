@@ -32,7 +32,6 @@ app.get('/', function(req, res) {
 });
 
 
-// app.use('/', index); <-- COMMENT THIS
 app.use('/api/museums', museumsRouter);
 app.use('/api/menu', menuRouter);
 app.use('/api/artist', artistRouter);
