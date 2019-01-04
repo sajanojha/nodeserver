@@ -19,7 +19,6 @@ let options = { method: 'POST',
 /*get all the artists objects  */
 // rdf:type  crm:E39_Actor for all the actors.
 router.get('/', function(req, res, next) {
-    console.log("this is working");
     const offSet = req.query.offset;
     const limit = req.query.limit;
     let dataString = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>' +
@@ -36,8 +35,6 @@ router.get('/', function(req, res, next) {
         '\nLIMIT' + limit + '\n OFFSET ' + offSet;
 
     options.form =  { query:  dataString } ;
-    console.log(dataString);
-
     fetchDataFromEndPoint.getData(options, function(err, results) {
         if (err) {
             console.log(err.stack);
