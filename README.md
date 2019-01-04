@@ -46,5 +46,9 @@ It will show an output as "Hello World" on the browser
     
 ###### List out all the museums per museum
 
-    http://localhost:3000/api/museums/manmadeobjects/institution/The%20Walters%20Art%20Museum?currentPage=1&limit=100&maxSize=100&offset=0&pageSize=100&totalItems=1647    
+    http://localhost:3000/api/museums/manmadeobjects/institution/The%20Walters%20Art%20Museum?offset=0&limit=100    
+    Parameters: 
+        institution = Gilcrease Museum
+        offset = 1
+        limit = 100
     
