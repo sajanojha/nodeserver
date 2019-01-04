@@ -36,7 +36,7 @@ Navigate to
     
     localhost:3000
     
-It will show an output as "Hello World" on the browser
+It will show an output as "Welcome to the node server for Art-Colab Project!!!!" on the browser
 
 ## API
 
