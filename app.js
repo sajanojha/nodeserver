@@ -4,10 +4,12 @@ const path = require('path');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const cors = require('cors')
+const cors = require('cors');
 
 const museumsRouter = require('./routes/museumsRouter');
 const menuRouter = require('./routes/menuRouter');
+const artifactRouter = require('./routes/artifactRouter');
+const artistRouter = require('./routes/artistRouter');
 
 let app = express();
 
@@ -33,6 +35,8 @@ app.get('/', function(req, res) {
 // app.use('/', index); <-- COMMENT THIS
 app.use('/api/museums', museumsRouter);
 app.use('/api/menu', menuRouter);
+app.use('/api/artist', artistRouter);
+app.use('/api/artifact', artifactRouter);
 
 // In production, we'll actually serve our angular app from express
 if (app.get('env') === 'production') {
