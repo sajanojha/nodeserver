@@ -16,7 +16,6 @@ let options = { method: 'POST',
 /* GET all the museums. */
 // rdf:type  crm:E40_Legal_Body . fetches all the legal organization
 router.get('/', function(req, res, next) {
-
   const dataString = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>' +
                      '\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' +
                      '\nPREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>' +
@@ -61,7 +60,7 @@ router.get('/manmadeobjects/institution/:institution', function(req, res, next) 
 });
 
 /*get all the artist  per museums */
-// rdf:type  crm:E39_Actor fetches all the artists per museum.
+// rdf:type  crm:E39_Actor for all the artists per museum.
 //configoptions.museums[institutionURL].globalURL  stores the name of the particular museum
 router.get('/actors/institution/:institution', function(req, res, next) {
   let institutionURL = req.params.institution;
@@ -70,7 +69,7 @@ router.get('/actors/institution/:institution', function(req, res, next) {
   let dataString = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>' +
       '\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' +
       '\nPREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>' +
-      '\nSELECT ?sub ?name WHERE {\n    graph <' + configoptions.museums[institutionURL].globalURL +'>' +
+      '\nSELECT DISTINCT ?sub ?name WHERE {\n    graph <' + configoptions.museums[institutionURL].globalURL +'>' +
       '\n  {\n  ?sub rdf:type  crm:E39_Actor.' +
       '\n    ?sub rdfs:label ?name.\n  }\n}ORDER BY (LCASE(?name)) ' +
       '\nLIMIT' + limit + '\n OFFSET ' + offSet;

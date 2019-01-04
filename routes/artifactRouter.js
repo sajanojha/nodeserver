@@ -17,7 +17,7 @@ let options = { method: 'POST',
 
 
 /*get all the manmade objects  */
-// rdf:type  crm:E22_Man-Made_Object fetches all the objects per museum.
+// rdf:type  crm:E22_Man-Made_Object for all the objects per museum.
 router.get('/', function(req, res, next) {
     console.log("this is working");
     const offSet = req.query.offset;
