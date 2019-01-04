@@ -44,11 +44,18 @@ It will show an output as "Hello World" on the browser
 
     http://localhost:3000/api/museums
     
-###### List out all the museums per museum
+###### List out all the artifacts per museum
 
     http://localhost:3000/api/museums/manmadeobjects/institution/The%20Walters%20Art%20Museum?offset=0&limit=100    
     Parameters: 
         institution = Gilcrease Museum
         offset = 1
         limit = 100
-    
+        
+###### List out all the artists per museum
+
+    http://localhost:3000/api/museums/artists/institution/The%20Walters%20Art%20Museum?offset=0&limit=100    
+    Parameters: 
+        institution = Gilcrease Museum
+        offset = 1
+        limit = 100    
