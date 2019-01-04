@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors')
 
 const museumsRouter = require('./routes/museumsRouter');
+const menuRouter = require('./routes/menuRouter');
 
 let app = express();
 
@@ -25,12 +26,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
-  res.send('Hello World!');
+  res.send('Welcome to the node server for Art-Colab Project!!!!');
 });
 
 
 // app.use('/', index); <-- COMMENT THIS
 app.use('/api/museums', museumsRouter);
+app.use('/api/menu', menuRouter);
 
 // In production, we'll actually serve our angular app from express
 if (app.get('env') === 'production') {
