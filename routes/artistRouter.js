@@ -16,7 +16,7 @@ let options = { method: 'POST',
 
 
 
-/*get all the manmade objects  */
+/*get all the artists objects  */
 // rdf:type  crm:E39_Actor for all the actors.
 router.get('/', function(req, res, next) {
     console.log("this is working");
@@ -25,11 +25,18 @@ router.get('/', function(req, res, next) {
     let dataString = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>' +
         '\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>' +
         '\nPREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>' +
-        '\nSELECT DISTINCT ?sub ?name WHERE {\n  ?sub rdf:type  crm:E39_Actor.' +
-        '\n  ?sub rdfs:label ?name\n  \n}\nORDER BY (LCASE(?name)) ' +
+        '\nPrefix skos: <http://www.w3.org/2004/02/skos/core#>' +
+        '\nSELECT  ?getty ?sub ?name WHERE {' +
+        '\n  ?sub rdf:type  crm:E39_Actor.' +
+        '\n  ?sub rdfs:label ?name.' +
+        '\n  ?sub skos:exactMatch ?getty' +
+        '\n} ' +
+        '\nORDER BY (LCASE(?name))' +
+        //'\nGROUP BY ?getty' +
         '\nLIMIT' + limit + '\n OFFSET ' + offSet;
 
     options.form =  { query:  dataString } ;
+    console.log(dataString);
 
     fetchDataFromEndPoint.getData(options, function(err, results) {
         if (err) {
