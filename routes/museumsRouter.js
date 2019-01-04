@@ -1,7 +1,11 @@
+/* This router get the information about all the museums */
+/* The datastring variable is a SPARQL query */
+
 const express = require('express');
 const router = express.Router();
-//const request = require('request');
+// Get the configuration options like header file and museum URLS
 const configoptions = require('../config.json');
+// include http request function that fetch the dtaa via HTTP(s) request
 const fetchDataFromEndPoint = require('./fetchDataFromEndPoint.js');
 
 let options = { method: 'POST',
@@ -10,6 +14,7 @@ let options = { method: 'POST',
 
 
 /* GET all the museums. */
+// rdf:type  crm:E40_Legal_Body . fetches all the legal organization
 router.get('/', function(req, res, next) {
 
   const dataString = 'PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>' +
@@ -30,6 +35,8 @@ router.get('/', function(req, res, next) {
 });
 
 /*get all the manmade objects per museums */
+// rdf:type  crm:E22_Man-Made_Object fetches all the objects per museum.
+//configoptions.museums[institutionURL].globalURL  stores the name of the particular museum
 router.get('/manmadeobjects/institution/:institution', function(req, res, next) {
   let institutionURL = req.params.institution;
   const offSet = req.query.offset;
@@ -54,6 +61,8 @@ router.get('/manmadeobjects/institution/:institution', function(req, res, next) 
 });
 
 /*get all the artist  per museums */
+// rdf:type  crm:E39_Actor fetches all the artists per museum.
+//configoptions.museums[institutionURL].globalURL  stores the name of the particular museum
 router.get('/actors/institution/:institution', function(req, res, next) {
   let institutionURL = req.params.institution;
   const offSet = req.query.offset;
