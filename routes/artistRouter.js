@@ -76,6 +76,7 @@ router.get('/getinfluenced/artist/:artist', function(req, res, next){
         '\n    }\n';
     options.form =  { query:  dataString } ;
     options.url = "http://dbpedia.org/sparql";
+    options.headers["content-type"] = "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW";
 
     fetchDataFromEndPoint.getData(options, function(err, results) {
         if (err) {
@@ -121,6 +122,7 @@ router.get('/getinfluencedby/artist/:artist', function(req, res, next){
         '\n     Filter regex(?PersonName, "' + artist + '", "i" ) \n}\n';
     options.form =  { query:  dataString } ;
     options.url = "http://dbpedia.org/sparql";
+    options.headers["content-type"] = "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW";
 
     fetchDataFromEndPoint.getData(options, function(err, results) {
         if (err) {

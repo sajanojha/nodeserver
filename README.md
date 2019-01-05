@@ -44,18 +44,52 @@ It will show an output as "Welcome to the node server for Art-Colab Project!!!!"
 
     http://localhost:3000/api/museums
     
-###### List out all the artifacts per museum
+###### List out all the artifacts per museum- paginated
 
-    http://localhost:3000/api/museums/manmadeobjects/institution/The%20Walters%20Art%20Museum?offset=0&limit=100    
+    http://localhost:3000/api/museums/manmadeobjects/institution/aaa?offset=0&limit=100    
     Parameters: 
-        institution = Gilcrease Museum
+        institution = aaa
         offset = 1
         limit = 100
         
-###### List out all the artists per museum
+###### List out all the artists per museum- paginated
 
-    http://localhost:3000/api/museums/artists/institution/The%20Walters%20Art%20Museum?offset=0&limit=100    
+    http://localhost:3000/api/museums/artists/institution/aaa?offset=0&limit=100    
     Parameters: 
-        institution = Gilcrease Museum
+        institution = aaa
         offset = 1
         limit = 100    
+        
+###### List out all the artifacts - paginated
+
+    http://localhost:3000/api/artifact?offset=0&limit=100    
+    Parameters: 
+        offset = 1
+        limit = 100  
+        
+###### List out all the artists - paginated
+
+    http://localhost:3000/api/artist?offset=0&limit=100    
+    Parameters: 
+        offset = 1
+        limit = 100
+
+###### List the detail about an artifact
+
+    http://localhost:3000/api/artifact/institution/cbm/id/1919       
+         
+###### List the related artifact for the artist
+
+    http://localhost:3000/api/artifact/getrelatedartworks/artist/Andy%20Warhol   
+    
+###### List the detail about an artist
+
+    http://localhost:3000/api/artist/institution/wam/id/4486            
+
+###### List all the artist influenced
+
+    http://localhost:3000/api/artist/getinfluenced/artist/Andy%20Warhol
+    
+###### List all the artist influencedby
+
+    http://localhost:3000/api/artist/getinfluencedby/artist/Andy%20Warhol         
