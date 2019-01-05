@@ -22,6 +22,7 @@ router.get('/', function(req, res, next) {
                      '\nSELECT ?sub ?name WHERE {' +
                      '\n  ?sub rdf:type  crm:E40_Legal_Body.' +
                      '\n  ?sub rdfs:label ?name.\n  \n} ';
+
     options.form =  { query:  dataString } ;
 
   fetchDataFromEndPoint.getData(options, function(err, results) {
@@ -47,6 +48,7 @@ router.get('/manmadeobjects/institution/:institution', function(req, res, next) 
                    '\n  {\n  ?sub rdf:type  crm:E22_Man-Made_Object.' +
                    '\n    ?sub rdfs:label ?name.\n  }\n}ORDER BY (LCASE(?name)) ' +
                    '\nLIMIT' + limit + '\n OFFSET ' + offSet;
+
 
   options.form =  { query:  dataString } ;
 

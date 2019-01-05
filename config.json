@@ -33,99 +33,113 @@
       "name" : "Gilcrease Museum",
       "webURL" : "http://data.gilcrease.org",
       "globalURL" : "http://data.americanartcollaborative.org/GM",
-      "objectURL" : "http://data.americanartcollaborative.org/gm/object/"
+      "objectURL" : "http://data.americanartcollaborative.org/gm/object/",
+      "artistURL" : "http://data.americanartcollaborative.org/gm/constituent/"
     },
     "aaa" : {
       "code" : "aaa",
       "name": "Archives of American Art",
       "webURL" : "http://data.aaa.si.edu/",
       "globalURL" : "http://data.americanartcollaborative.org/aaa",
-      "objectURL" : "http://data.aaa.si.edu/object/"
+      "objectURL" : "http://data.aaa.si.edu/object/",
+      "artistURL" : "http://data.aaa.si.edu/person/"
     },
     "acm" : {
       "code" : "acm",
       "name" : "The Amon Carter",
       "webURL" : "http://data.cartermuseum.org",
       "globalURL" : "http://data.americanartcollaborative.org/acm",
-      "objectURL" : "http://data.cartermuseum.org/object/"
+      "objectURL" : "http://data.cartermuseum.org/object/",
+      "artistURL" : "http://data.cartermuseum.org/artist/"
     },
     "autry" : {
       "code" : "autry",
       "name" : "Autry Museum of the American West",
       "webURL" : "http://data.theautry.org",
       "globalURL" : "http://data.americanartcollaborative.org/autry",
-      "objectURL" : "http://data.theautry.org/object/"
+      "objectURL" : "http://data.theautry.org/object/",
+      "artistURL" : "http://data.theautry.org/maker/"
     },
     "cbm" : {
       "code" : "cbm",
       "name" : "Crystal Bridges Museum of American Art",
       "webURL" : "http://data.crystalbridges.org",
       "globalURL" : "http://data.americanartcollaborative.org/cbm",
-      "objectURL" : "http://data.crystalbridges.org/object/"
+      "objectURL" : "http://data.crystalbridges.org/object/",
+      "artistURL" : "http://data.crystalbridges.org/constituent/"
     },
-    "ccma" : {
+    "aac" : {
       "code" : "ccma",
       "name" : "Colby College Museum of Art",
       "webURL" : "http://data.museum.colby.edu/aac",
       "globalURL" : "http://data.americanartcollaborative.org/ccma",
-      "objectURL" : "http://data.museum.colby.edu/aac/object/"
+      "objectURL" : "http://data.museum.colby.edu/aac/object/",
+      "artistURL" : "http://data.museum.colby.edu/aac/constituent/"
     },
     "dma" : {
       "code" : "dma",
       "name" : "Dallas Museum of Art",
       "webURL" : "http://data.americanartcollaborative.org/dma",
       "globalURL" : "http://data.americanartcollaborative.org/dma",
-      "objectURL" : "http://data.americanartcollaborative.org/dma/object/"
+      "objectURL" : "http://data.americanartcollaborative.org/dma/object/",
+      "artistURL" : "http://data.americanartcollaborative.org/dma/constituent/"
     },
     "ima" : {
       "code" : "ima",
       "name" : "Indianapolis Museum of Art at Newfields",
       "webURL" : "http://data.imamuseum.org/",
       "globalURL" : "http://data.americanartcollaborative.org/ima",
-      "objectURL" : "http://data.imamuseum.org/object/"
+      "objectURL" : "http://data.imamuseum.org/object/",
+      "artistURL" : "http://data.imamuseum.org/actor/"
     },
     "nmwa" : {
       "code" : "nmwa",
       "name" : "National Museum of Wildlife Art",
       "webURL" : "http://data.wildlifeart.org",
       "globalURL" : "http://data.americanartcollaborative.org/nmwa",
-      "objectURL" : "http://data.wildlifeart.org/object/"
+      "objectURL" : "http://data.wildlifeart.org/object/",
+      "artistURL" : "http://data.wildlifeart.org/constituent/"
     },
     "npg" : {
       "code" : "npg",
       "name" : "National Portrait Gallery",
       "webURL" : "http://data.npg.si.edu",
       "globalURL" : "http://data.americanartcollaborative.org/npg",
-      "objectURL" : "http://data.americanartcollaborative.org/npg/object/"
+      "objectURL" : "http://data.npg.si.edu/object/",
+      "artistURL" : "http://data.npg.si.edu/person-institution/"
     },
     "puam" : {
       "code" : "puam",
       "name" : "Princeton University Art Museum",
       "webURL" : "http://data.americanartcollaborative.org/puam",
       "globalURL" : "http://data.americanartcollaborative.org/puam",
-      "objectURL" : "http://data.americanartcollaborative.org/puam/object/"
+      "objectURL" : "http://data.americanartcollaborative.org/puam/object/",
+      "artistURL" : "http://data.americanartcollaborative.org/puam/constituent/"
     },
     "saam" : {
       "code" : "saam",
       "name" : "Smithsonian American Art Museum",
       "webURL" : "http://data.americanart.si.edu",
       "globalURL" : "http://data.americanartcollaborative.org/saam",
-      "objectURL" : "http://data.americanartcollaborative.org/saam/object/"
+      "objectURL" : "http://data.americanart.si.edu/object/id/",
+      "artistURL" : "http://data.americanart.si.edu/constituent/id/"
     },
     "wam" : {
       "code" : "wam",
       "name" : "The Walters Art Museum",
       "webURL" : "http://data.thewalters.org",
       "globalURL" : "http://data.americanartcollaborative.org/wam",
-      "objectURL" : "http://data.thewalters.org/object/"
+      "objectURL" : "http://data.thewalters.org/object/",
+      "artistURL" : "http://data.thewalters.org/constituent/"
 
     },
     "ycba" : {
       "code" : "ycba",
       "name" : "Yale Center for British Art",
       "webURL" : "http://collection.britishart.yale.edu/id/person-institution/ycba",
-      "globalURL" : "http://data.americanartcollaborative.org/ycba",
-      "objectURL" : "http://collection.britishart.yale.edu/id/object/"
+      "globalURL" : "http://collection.britishart.yale.edu",
+      "objectURL" : "http://collection.britishart.yale.edu/id/object/",
+      "artistURL" : "http://collection.britishart.yale.edu/person-institution/"
     }
   }
 }

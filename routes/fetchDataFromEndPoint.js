@@ -3,7 +3,7 @@ const request = require('request');
 module.exports = {
   getData : (options, callback) => {
       console.log("************Query String Start**************\n");
-      //console.log(options.form.query);
+      console.log(options.form.query);
       console.log("\n************Query String End****************\n");
         request(options, function(err, res, body) {
       if (err)
